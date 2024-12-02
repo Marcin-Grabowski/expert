@@ -10,7 +10,7 @@
     <meta name="description" content=" ----------   opis naszej strony  ------------------">
     <title>EKSPERT Centrum profilaktyki
         uzależnień</title>
-    <link rel="stylesheet" href="variables.css"> <!-- Plik z zmiennymi -->
+    <link rel="stylesheet" href="variables.css">
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -23,34 +23,37 @@
 
 <body class="contact">
     <header class="main-header">
-        <div class="header-logo">
-            <a href="home.html">
-                <img src="assets/icon/Ekspert Centrum Profilaktyki Uzależnień.svg"
-                    alt="Ekspert Centrum Profilaktyki Uzależnień">
-            </a>
-        </div>
-        <nav class="header-nav">
-            <a class="nav-button" href="onas.html">O nas</a>
-            <div class="dropdown">
-                <div class="nav-button">Warsztaty i szkolenia
-                    <i class="fa fa-caret-down"></i>
-                </div>
-                <div class="dropdown-content">
-                    <a class="nav-button" href="#student-workshops">Szkolenia dla uczniów</a>
-                    <a class="nav-button" href="#parent-training">Szkolenia dla rodziców</a>
-                    <a class="nav-button" href="#teacher-training">Szkolenia dla kadry pedagogicznej</a>
-                    <a class="nav-button" href="#custom-training">Autorskie szkolenia</a>
-                </div>
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="home.html">
+                    <img src="assets/icon/Ekspert Centrum Profilaktyki Uzależnień.svg"
+                        alt="Ekspert Centrum Profilaktyki Uzależnień">
+                </a>
             </div>
-            <a class="nav-button" href="dzienprofilaktyka.html">Dzień profilaktyka</a>
-            <a class="nav-button active" href="kontakt.html">Kontakt</a>
-        </nav>
+            <nav class="header-nav">
+                <a class="nav-button" href="onas.html">O nas</a>
+                <div class="dropdown">
+                    <div class="nav-button">Warsztaty i szkolenia
+                        <i class="fa fa-caret-down"></i>
+                    </div>
+                    <div class="dropdown-content">
+                        <a class="nav-button" href="warsztatydlaucziow.html">Warsztaty dla uczniów</a>
+                        <a class="nav-button" href="szkoleniadlarodzicow.html">Szkolenia dla rodziców</a>
+                        <a class="nav-button" href="szkoleniadlakadrypedagogicznej.html">Szkolenia dla kadry
+                            pedagogicznej</a>
+                        <a class="nav-button" href="rekomendowaneprogramy.html">Rekomendowane programy</a>
+                    </div>
+                </div>
+                <a class="nav-button" href="dzienprofilaktyka.html">Dzień profilaktyka</a>
+                <a class="nav-button active" href="kontakt.html">Kontakt</a>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="hero-section">
             <section class="hero-container">
                 <div class="hero-text-container">
-                    <h4 class="medium">Kontakt</h4>
+                    <h4 class="medium header-color-primary">Skontaktuj się z nami</h4>
                 </div>
                 <div class="empty-container"></div>
             </section>
@@ -59,37 +62,39 @@
             <div class="contact-container">
                 <div class="contact-card">
                     <header>
-                        <h6 class="medium">Centrum Profilaktyki EKSPERT</h6>
+                        <h6 class="medium header-color-primary">Informacje kontaktowe</h6>
                     </header>
                     <address class="address">
-                        <p class="text-color-secondary" id="adresss-info">
-                            <span aria-hidden="true">
+                        <div id="home-address">
+                            <div>
                                 <i class="material-icons">home</i>
-                            </span>Dąbrowskiego 4/15<br>31-540
-                            Kraków
-                        </p>
-                        <p>
+                            </div>
+                            <p class="text-color-secondary" id="important-icon ">
+                                Masarska 13/5<br>31-534 Kraków
+                            </p>
+                        </div>
+                        <p class="text-color-secondary">
                             <a href="mailto:ekspert.profilaktyka@gmail.com">
                                 <span aria-hidden="true">
                                     <i class="material-icons">mail</i>
                                 </span> ekspert.profilaktyka@gmail.com
                             </a>
                         </p>
-                        <p>
+                        <p class="text-color-secondary">
                             <a href="mailto:ekspert.profilaktyka@gmail.com">
                                 <span aria-hidden="true">
                                     <i class="material-icons">mail</i>
                                 </span> ekspert.profilaktyka@gmail.com
                             </a>
                         </p>
-                        <p>
+                        <p class="text-color-secondary">
                             <a href="tel:+48692919492">
                                 <span aria-hidden="true">
                                     <i class="material-icons">call</i>
                                 </span>+48 692-919-492
                             </a>
                         </p>
-                        <p>
+                        <p class="text-color-secondary">
                             <a href="tel:+48692919492">
                                 <span aria-hidden="true">
                                     <i class="material-icons">call</i>
@@ -99,6 +104,9 @@
                     </address>
                 </div>
                 <main class="main-contact">
+                    <header>
+                        <h6 class="medium header-color-primary">Kontakt</h6>
+                    </header>
                     <div>
                         <input type="text" id="name" name="name" placeholder="Imię Nazwisko" class="style-input">
                         <input type="text" id="email" name="email" placeholder="Adres e-mail" class="style-input">
@@ -111,7 +119,7 @@
                     <div>
                         <input type="text" id="subject" name="subject" placeholder="Temat" class="style-input">
                     </div>
-                    <textarea name="message" id="message" row="auto">Podaj treść zapytania</textarea>
+                    <textarea name="message" id="message" row="auto" placeholder="Podaj treść zapytania"></textarea>
                     <label class="rodo-consent">
                         <input type="checkbox" id="rodo-consent" name="rodo-consent" required>
                         <span>
@@ -119,7 +127,7 @@
                             danych osobowych zgodnie z&nbsp;ustawą o&nbsp;ochronie danych osobowych w&nbsp;celu
                             przedstawienia
                             odpowiedzi na wysyłane zapytanie. Więcej informacji znajdziesz w&nbsp;naszej <a
-                                style="color: #2900BD;" href="/polityka-prywatnosci">Polityce&nbsp;prywatności</a>.
+                                style="color: #2900BD;" href="politykaprywatnosci.html">Polityce&nbsp;prywatności</a>.
                         </span>
                     </label>
                     <button type="submit">Wyślij</button>
@@ -127,62 +135,69 @@
             </div>
         </section>
     </main>
-    <footer class="site-footer">
-        <section class="footer-section">
-            <div class="footer-logo-container">
-                <img src="assets/icon/ekspert-logo-semi-white.svg" alt="ekspert-logo-semi-white">
-
-            </div>
-            <div class="footer-menu">
-                <section id="menu">
-                    <header>
-                        <p class="p2">Menu</p>
-                    </header>
-                    <ul>
-                        <li>
-                            <a href="#" class="p2">O nas</a>
-                        </li>
-                        <li>
-                            <a href="#" class="p2">Dzień Profilaktyki</a>
-                        </li>
-                        <li>
-                            <a href="#" class="p2">Komtakt</a>
-                        </li>
-                    </ul>
-                </section>
-                <section id="product">
-                    <header>
-                        <p class="p2">Warsztaty i szkolenia</p>
-                    </header>
-                    <ul>
-                        <li>
-                            <a href="#" class="p2">Dla uczniów</a>
-                        </li>
-                        <li>
-                            <a href="#" class="p2">Dla rodziców</a>
-                        </li>
-                        <li>
-                            <a href="#" class="p2">Dla kadry pedagogicznej</a>
-                        </li>
-                    </ul>
-                </section>
-
-                <section id="action">
+    <footer class="main-footer">
+        <div class="footer-container">
+            <section class="footer-nav">
+                <div class="nav-container">
+                    <div class="nav">
+                        <header>
+                            <p class="p2">Ekspert Profilaktyka</p>
+                        </header>
+                        <ul>
+                            <li>
+                                <a href="home.html" class="p2">Strona głowna</a>
+                            </li>
+                            <li>
+                                <a href="onas.html" class="p2">O nas</a>
+                            </li>
+                            <li>
+                                <a href="dzienprofilaktyka.html" class="p2">Dzień Profilaktyki</a>
+                            </li>
+                            <li>
+                                <a href="kontakt.html" class="p2">Komtakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav">
+                        <header>
+                            <p class=" p2">Warsztaty i szkolenia</p>
+                        </header>
+                        <ul>
+                            <li>
+                                <a href="warsztatydlaucziow.html" class="p2">Dla uczniów</a>
+                            </li>
+                            <li>
+                                <a href="szkoleniadlarodzicow.html" class="p2">Dla rodziców</a>
+                            </li>
+                            <li>
+                                <a href="szkoleniadlakadrypedagogicznej.html" class="p2">Dla kadry pedagogicznej</a>
+                            </li>
+                            <li>
+                                <a class="nav-button" href="rekomendowaneprogramy.html">Rekomendowane
+                                    programy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <section class="footer-action">
                     <header>
                         <p class="p2">Skontaktuj się</p>
                     </header>
-                    <button class="button-primary">Kontakt</button>
+                    <a href="kontakt.html"><button type="button" class="button-primary">kontakt</button></a>
                 </section>
+            </section>
+            <div class="info">
+                <p>
+                    <span>
+                        &#x00A9;2024 Centrum profilaktyki uzależnień EKSPERT Dariusz Miłek.
+                        &#174;Wszystkie prawa
+                        zastrzeżone.
+                    </span>
+                </p>
+                <p>
+                    <span>Projekt i wykonanie: Marcin Grabowski.</span>
+                </p>
             </div>
-        </section>
-        <div>
-            <p><span>
-                    &#x00A9;2024 Centrum profilaktyki uzależnień EKSPERT Dariusz Miłek.
-                    &#174;Wszystkie prawa
-                    zastrzeżone.
-                    Projekt i wykonanie: Marcin Grabowski.
-                </span>
-            </p>
         </div>
     </footer>
 </body>
