@@ -13,6 +13,17 @@ body {
         padding: 0;
         margin: 0px
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .empty-container {
+        max-width: 640px;
+        flex: 1 0 0;
+        align-self: stretch;
+    }
 }
 
 main {
@@ -23,7 +34,6 @@ main {
     background: var(--Body-Primary-Backgorund, #FFF);
 }
 
-/* Navbar container */
 .main-header {
     display: flex;
     align-items: center;
@@ -40,7 +50,6 @@ main {
         align-items: center;
         flex: 1 0 0;
 
-        /* 24px */
         .header-logo {
             display: flex;
             flex-direction: column;
@@ -230,16 +239,6 @@ main {
     }
 
 
-}
-
-
-
-.custom-line {
-    width: var(--Width-24-rem, 384px);
-    height: 0px;
-    stroke-width: 1px;
-    stroke: #000;
-    margin-left: 0;
 }
 
 .home {
@@ -839,115 +838,6 @@ main {
     }
 }
 
-.empty-container {
-    max-width: 640px;
-    flex: 1 0 0;
-    align-self: stretch;
-    /* background-color: rgba(201, 192, 255, 0.481); */
-    /* border: solid pink 8px; */
-}
-
-.media-section {
-    /* sekcja na kazdej stronie produktowej */
-    display: flex;
-    max-width: 408px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: var(--Spacing-1rem, 16px);
-    flex: 1 0 0;
-    align-self: stretch;
-
-
-
-    .contact-section {
-        display: flex;
-        padding: 0px var(--spacing-15-rem, 24px);
-        flex-direction: column;
-        align-items: flex-start;
-        flex: 1 0 0;
-        align-self: stretch;
-
-        .contact-card {
-            display: flex;
-            padding: var(--Spacing-1rem);
-            flex-direction: column;
-            align-items: flex-start;
-            gap: var(--Spacing-1rem);
-            align-self: stretch;
-            position: sticky;
-            top: var(--Spacing-1rem);
-
-
-
-            border-radius: var(--Spacing-1rem, 16px);
-            background: var(--Body-Primary-Backgorund, #FFF);
-
-            /* Shadow/Small */
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-
-            /* Shadow/Small */
-            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-
-            .address {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: var(--spacing-05-rem);
-                align-self: stretch;
-
-                .home-address {
-                    width: 24px;
-                    height: 48px;
-                    gap: 10px;
-                    background-color: #BB2901;
-                    border: #2900BD solid;
-                }
-
-
-                a {
-                    display: flex;
-                    align-items: flex-start;
-                    gap: var(--Spacing-1rem, 16px);
-                    align-self: stretch;
-                    color: var(--Text-Body-secondary, #000);
-
-
-                    &:hover {
-                        color: var(--Nav-hover, #00BB29);
-                    }
-
-                    &:focus {
-                        color: var(--Nav-hover, #00BB29);
-                    }
-
-                    &:active {
-                        color: var(--Nav-activ, #007D1B);
-                    }
-
-                    &:disabled {
-                        color: var(--Nav-disabled, #A9E8B7);
-                    }
-                }
-
-
-            }
-
-
-        }
-    }
-
-
-
-    img {
-        height: 448px;
-        align-self: stretch;
-        border-radius: var(--Spacing-1rem, 16px);
-
-    }
-
-
-}
-
 .oferta-dzienprofilaktyka {
     .hero-section {
         display: flex;
@@ -1089,6 +979,103 @@ main {
                 }
             }
         }
+    }
+}
+
+.media-section {
+    /* sekcja na kazdej stronie produktowej */
+    display: flex;
+    max-width: 408px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-1rem, 16px);
+    flex: 1 0 0;
+    align-self: stretch;
+
+
+
+    .contact-section {
+        display: flex;
+        padding: 0px var(--spacing-15-rem, 24px);
+        flex-direction: column;
+        align-items: flex-start;
+        flex: 1 0 0;
+        align-self: stretch;
+
+        .contact-card {
+            display: flex;
+            padding: var(--Spacing-1rem);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: var(--Spacing-1rem);
+            align-self: stretch;
+            position: sticky;
+            top: var(--Spacing-1rem);
+
+
+
+            border-radius: var(--Spacing-1rem, 16px);
+            background: var(--Body-Primary-Backgorund, #FFF);
+
+            /* Shadow/Small */
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+            /* Shadow/Small */
+            box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+
+            .address {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--spacing-05-rem);
+                align-self: stretch;
+
+                .home-address {
+                    width: 24px;
+                    height: 48px;
+                    gap: 10px;
+                    background-color: #BB2901;
+                    border: #2900BD solid;
+                }
+
+
+                a {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: var(--Spacing-1rem, 16px);
+                    align-self: stretch;
+                    color: var(--Text-Body-secondary, #000);
+
+
+                    &:hover {
+                        color: var(--Nav-hover, #00BB29);
+                    }
+
+                    &:focus {
+                        color: var(--Nav-hover, #00BB29);
+                    }
+
+                    &:active {
+                        color: var(--Nav-activ, #007D1B);
+                    }
+
+                    &:disabled {
+                        color: var(--Nav-disabled, #A9E8B7);
+                    }
+                }
+
+
+            }
+
+
+        }
+    }
+
+    img {
+        height: 448px;
+        align-self: stretch;
+        border-radius: var(--Spacing-1rem, 16px);
+
     }
 }
 
@@ -1394,13 +1381,6 @@ p {
     }
 }
 
-
 .header-color-primary {
     color: var(--Text-Headline-primary, #00BB29);
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-    /* Dopasowanie koloru tekstu do koloru rodzica */
 }
