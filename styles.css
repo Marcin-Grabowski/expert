@@ -157,13 +157,11 @@ main {
 
                 .nav {
                     display: flex;
-                    min-width: 220px;
-                    max-width: 221px;
+                    min-width: 224px;
+                    max-width: 225px;
                     flex-direction: column;
                     align-items: flex-start;
                     gap: var(--spacing-05-rem, 8px);
-                    flex: 1 0 0;
-                    gap: 24px;
 
 
                     ul {
