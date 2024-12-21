@@ -246,8 +246,8 @@ main {
         flex-direction: column;
         align-items: center;
         align-self: stretch;
-        background: url(assets/img/background-home-hero.jpg) lightgray 50% / cover no-repeat;
-
+        background: url(assets/img/background-home-hero.png) lightgray 50% / cover no-repeat;
+        background-position: top;
 
         .hero-container {
             display: flex;
@@ -401,6 +401,8 @@ main {
         align-items: center;
         align-self: stretch;
         background: url(assets/img/background-home-about.jpg)lightgray 50% / cover no-repeat;
+        background-position: top;
+
 
         .about-container {
             display: flex;
@@ -472,7 +474,9 @@ main {
         flex-direction: column;
         align-items: center;
         align-self: stretch;
-        background: url(assets/img/background-about-hero.jpg) lightgray 50% / cover no-repeat;
+        background: url(assets/img/background-about-hero.png) lightgray 50% / cover no-repeat;
+        background-position: top;
+
 
         .hero-container {
             display: flex;
@@ -585,7 +589,9 @@ main {
         align-items: center;
         flex-shrink: 0;
         align-self: stretch;
-        background: url(assets/img/background-contact-hero.jpg) lightgray 50% / cover no-repeat;
+        background: url(assets/img/background-contact-hero.png) lightgray 50% / cover no-repeat;
+        background-position: top;
+
 
         .hero-container {
             display: flex;
@@ -843,7 +849,9 @@ main {
         flex-direction: column;
         align-items: center;
         align-self: stretch;
-        background: url(assets/img/background-dzienprofilaktyki-hero.jpg) lightgray 50% / cover no-repeat;
+        background: url(assets/img/background-dzienprofilaktyki-hero.png) lightgray 50% / cover no-repeat;
+        background-position: top;
+
 
         .hero-container {
             display: flex;
@@ -906,19 +914,25 @@ main {
 
 .product-offer {
     #background-keeds-product {
-        background: url(assets/img/background-dzieci-hero.jpg) lightgray 50% / cover no-repeat;
+        background: url(assets/img/background-dzieci-hero.png) lightgray 50% / cover no-repeat;
+        background-position: top;
+
     }
 
     #background-parents-product {
-        background: url(assets/img/background-rodzice-hero.jpg) lightgray 50% / cover no-repeat;
+        background: url(assets/img/background-rodzice-hero.png) lightgray 50% / cover no-repeat;
+        background-position: top;
+
     }
 
     #background-teachers-product {
-        background: url(assets/img/background-kadrapedagogiczna-hero.jpg) lightgray 50% / cover no-repeat;
+        background: url(assets/img/background-kadrapedagogiczna-hero.png.png) lightgray 50% / cover;
+        background-position: top;
     }
 
     #background-corporate-product {
-        background: url(assets/img/background-autorskie-hero.jpg) lightgray 50% / cover no-repeat;
+        background: url(assets/img/background-autorskie-hero.png) lightgray 50% / cover no-repeat;
+        background-position: top;
     }
 
 

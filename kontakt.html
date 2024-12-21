@@ -108,30 +108,33 @@
                     <header>
                         <h6 class="medium header-color-primary">Kontakt</h6>
                     </header>
-                    <div>
-                        <input type="text" id="name" name="name" placeholder="Imię Nazwisko" class="style-input">
-                        <input type="text" id="email" name="email" placeholder="Adres e-mail" class="style-input">
-                    </div>
-                    <div>
-                        <input type="text" id="organization" name="organization" placeholder="Nazwa orgranizacji"
-                            class="style-input">
-                        <input type="text" id="tel" name="phone" placeholder="Numer telefonu" class="style-input">
-                    </div>
-                    <div>
-                        <input type="text" id="subject" name="subject" placeholder="Temat" class="style-input">
-                    </div>
-                    <textarea name="message" id="message" row="auto" placeholder="Podaj treść zapytania"></textarea>
-                    <label class="rodo-consent">
-                        <input type="checkbox" id="rodo-consent" name="rodo-consent" required>
-                        <span>
-                            Wyrażam zgodę na przetwarzanie moich
-                            danych osobowych zgodnie z&nbsp;ustawą o&nbsp;ochronie danych osobowych w&nbsp;celu
-                            przedstawienia
-                            odpowiedzi na wysyłane zapytanie. Więcej informacji znajdziesz w&nbsp;naszej <a
-                                style="color: #2900BD;" href="politykaprywatnosci.html">Polityce&nbsp;prywatności</a>.
-                        </span>
-                    </label>
-                    <button type="submit">Wyślij</button>
+                    <form id="contactForm" action="send_email.php" method="POST">
+                        <div>
+                            <input type="text" id="name" name="name" placeholder="Imię Nazwisko" class="style-input">
+                            <input type="text" id="email" name="email" placeholder="Adres e-mail" class="style-input">
+                        </div>
+                        <div>
+                            <input type="text" id="organization" name="organization" placeholder="Nazwa orgranizacji"
+                                class="style-input">
+                            <input type="text" id="tel" name="phone" placeholder="Numer telefonu" class="style-input">
+                        </div>
+                        <div>
+                            <input type="text" id="subject" name="subject" placeholder="Temat" class="style-input">
+                        </div>
+                        <textarea name="message" id="message" row="auto" placeholder="Podaj treść zapytania"></textarea>
+                        <label class="rodo-consent">
+                            <input type="checkbox" id="rodo-consent" name="rodo-consent" required>
+                            <span>
+                                Wyrażam zgodę na przetwarzanie moich
+                                danych osobowych zgodnie z&nbsp;ustawą o&nbsp;ochronie danych osobowych w&nbsp;celu
+                                przedstawienia
+                                odpowiedzi na wysyłane zapytanie. Więcej informacji znajdziesz w&nbsp;naszej <a
+                                    style="color: #2900BD;"
+                                    href="politykaprywatnosci.html">Polityce&nbsp;prywatności</a>.
+                            </span>
+                        </label>
+                        <button type="submit">Wyślij</button>
+                    </form>
                 </main>
             </div>
         </section>
