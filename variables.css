@@ -1,7 +1,7 @@
 :root {
-    --font-primary: 'Poppins',
+    /* --font-primary: 'Poppins',
         sans-serif;
-    --font-size-base: 16px;
+    --font-size-base: 16px; */
     --Body-Primary-Backgorund: #FFF;
     --Body-Footer-Backgorund: #2A2A2D;
 
@@ -41,7 +41,7 @@
     --Button-secondary-outline-activ: #007D1B;
     --Button-secondary-outline-disabled: #A9E8B7;
     --Button-secondary-text: #00BB29;
-    --Button-secondary-background: rgba212,
+    --Button-secondary-background: 
         243,
         219,
         0.50;
@@ -70,9 +70,9 @@
 
 
 
-
+/* 
     --home-hero-background: url(assets/img/backgournd-home-hero.jpg) lightgray 50% / cover no-repeat;
-    --home-about-us-background: url(assets/img/backgournd-home-about-us.jpg) lightgray 50% / cover no-repeat;
+    --home-about-us-background: url(assets/img/backgournd-home-about-us.jpg) lightgray 50% / cover no-repeat; */
 
 
     --Text-footer: #DEDEDF;
