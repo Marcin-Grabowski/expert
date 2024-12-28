@@ -258,6 +258,8 @@ main {
 
             .hero-text-container {
                 display: flex;
+                /* max-width: 628px; */
+
                 flex-direction: column;
                 align-items: flex-start;
                 gap: var(--spacing-15-rem, 24px);
@@ -590,8 +592,6 @@ main {
         flex-shrink: 0;
         align-self: stretch;
         background: url(assets/img/background-contact-hero.png) lightgray 50% / cover no-repeat;
-        background-position: top;
-
 
         .hero-container {
             display: flex;
@@ -602,14 +602,12 @@ main {
             gap: var(--spacing-15-rem, 24px);
 
             .hero-text-container {
-                /* width: 50%; */
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: var(--spacing-15-rem, 24px);
                 flex: 1 0 0;
                 align-self: stretch;
-
             }
         }
     }
@@ -619,31 +617,31 @@ main {
         padding: var(--Spacing-3-rem, 48px) var(--Spacing-5-rem, 80px) var(--Spacing-4-rem, 64px) var(--Spacing-5-rem, 80px);
         flex-direction: column;
         align-items: center;
-        /* align-self: stretch; */
+
 
         .contact-container {
             display: flex;
+            width: 100%;
             max-width: 1280px;
+            justify-content: center;
             align-items: flex-start;
-            gap: var(--Spacing-5-rem, 80px);
+            gap: (--Spacing-5-rem, 80px);
             align-self: stretch;
 
             .contact-card {
                 display: flex;
-                min-width: 280px;
-                max-width: 380px;
-                padding: var(--Spacing-1rem, 16px);
+                min-width: 328px;
+                max-width: 412px;
                 flex-direction: column;
                 align-items: flex-start;
                 gap: var(--Spacing-1rem, 16px);
                 flex: 1 0 0;
-                border-radius: var(--Spacing-1rem, 16px);
 
                 .address {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    gap: var(--spacing-05-rem);
+                    gap: var(--spacing-05-rem, 8px);
                     align-self: stretch;
 
 
@@ -686,7 +684,6 @@ main {
             .main-contact {
                 display: flex;
                 min-width: 480px;
-                padding-top: var(--Spacing-1rem, 16px);
                 flex-direction: column;
                 align-items: flex-start;
                 gap: var(--Spacing-1rem, 16px);
@@ -695,7 +692,6 @@ main {
 
                 div {
                     display: flex;
-                    height: var(--Spacing-3-rem, 48px);
                     align-items: flex-start;
                     gap: var(--spacing-15-rem, 24px);
                     align-self: stretch;
@@ -710,59 +706,69 @@ main {
                     align-items: center;
                     gap: var(--spacing-05-rem, 8px);
                     align-self: stretch;
+                    border: none;
+                    box-shadow: inset 0 0 0 1px var(--text-field-default, #000);
                     border-radius: var(--Spacing-1rem, 16px);
-                    border: 1px solid var(--text-field-default, #000);
+                    /* border: 1px solid var(--text-field-default, #000); */
                     margin-bottom: 16px;
                     outline: none;
+                    align-self: stretch;
 
                     &:hover {
-                        border-color: var(--text-field-hover, #00BB29);
+                        box-shadow: inset 0 0 0 1px var(--text-field-hover, #00BB29);
+                        border-radius: var(--Spacing-1rem, 16px);
                     }
 
                     &:focus {
-                        border: 2px solid var(--text-field-focus, #00BB29);
+                        box-shadow: inset 0 0 0 2px var(--text-field-hover, #00BB29);
+                        border-radius: var(--Spacing-1rem, 16px);
                     }
 
                     &:invalid {
-                        border: 1px solid var(--text-field-error, #BB2901)
+                        box-shadow: inset 0 0 0 2px var(--text-field-error, #BB2901);
+                        border-radius: var(--Spacing-1rem, 16px);
                     }
 
                     &:invalid:focus {
-                        border: 2px solid var(--text-field-error, #BB2901)
+                        box-shadow: inset 0 0 0 2px var(--text-field-error, #BB2901);
+                        border-radius: var(--Spacing-1rem, 16px);
                     }
-
-
-
-
                 }
 
                 textarea {
                     font-family: Poppins;
                     display: flex;
-                    /* width: 100%; */
+                    width: 100%;
                     height: var(--Spacing-6-rem, 96px);
                     padding: var(--spacing-075-rem, 12px);
                     align-items: center;
-                    gap: var(--spacing-05-rem, 8px);
                     align-self: stretch;
+                    border: none;
+                    box-shadow: inset 0 0 0 1px var(--text-field-default, #000);
                     border-radius: var(--Spacing-1rem, 16px);
-                    border: 1px solid var(--Textarea-default, #000);
+                    /* border: 1px solid var(--text-field-default, #000); */
                     outline: none;
+                    margin-bottom: 16px;
+                    box-sizing: border-box;
 
                     &:hover {
-                        border-color: var(--text-field-hover, #00BB29);
+                        box-shadow: inset 0 0 0 1px var(--text-field-hover, #00BB29);
+                        border-radius: var(--Spacing-1rem, 16px);
                     }
 
                     &:focus {
-                        border: 2px solid var(--text-field-focus, #00BB29);
+                        box-shadow: inset 0 0 0 2px var(--text-field-hover, #00BB29);
+                        border-radius: var(--Spacing-1rem, 16px);
                     }
 
                     &:invalid {
-                        border: 1px solid var(--text-field-error, #BB2901)
+                        box-shadow: inset 0 0 0 2px var(--text-field-error, #BB2901);
+                        border-radius: var(--Spacing-1rem, 16px);
                     }
 
                     &:invalid:focus {
-                        border: 2px solid var(--text-field-error, #BB2901)
+                        box-shadow: inset 0 0 0 2px var(--text-field-error, #BB2901);
+                        border-radius: var(--Spacing-1rem, 16px);
                     }
                 }
 
@@ -771,6 +777,9 @@ main {
                     align-items: flex-start;
                     gap: var(--Spacing-1rem, 16px);
                     align-self: stretch;
+                    margin-bottom: 16px;
+
+
 
                     input[type="checkbox"] {
                         box-sizing: flex;
@@ -837,8 +846,6 @@ main {
                 }
             }
         }
-
-
     }
 }
 
