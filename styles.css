@@ -849,7 +849,7 @@ main {
     }
 }
 
-.oferta-dzienprofilaktyka {
+.oferta-dzienprofilaktyki {
     .hero-section {
         display: flex;
         padding: var(--Spacing-3-rem, 48px) var(--Spacing-5-rem, 80px) var(--Spacing-4-rem, 64px) var(--Spacing-5-rem, 80px);
