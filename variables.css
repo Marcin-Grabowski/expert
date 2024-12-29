@@ -14,16 +14,15 @@
     --nav-button-disabled-text: #A9E8B7;
 
     --Text-Header-primary: #00BB29;
+    --Text-Header-secondary: #000000;
     --Text-Body-priamary: #FFFFFF;
     --Text-Body-secondary: #000000;
-    /* --Text-Body-tertiar: #00BB29; */
     --Text-Body-tertiar: #2900BD;
 
 
     --Text-Headline-primary: #00BB29;
     --Text-Headline-secondary: #009C22;
-    --Text-Headline-secondary: #009C22;
-
+    
     --icons-color-primary: #000000;
     --icons-color-secondary: #00BB29;
 
@@ -41,7 +40,7 @@
     --Button-secondary-outline-activ: #007D1B;
     --Button-secondary-outline-disabled: #A9E8B7;
     --Button-secondary-text: #00BB29;
-    --Button-secondary-background: 
+    --Button-secondary-background:
         243,
         219,
         0.50;
@@ -70,7 +69,7 @@
 
 
 
-/* 
+    /* 
     --home-hero-background: url(assets/img/backgournd-home-hero.jpg) lightgray 50% / cover no-repeat;
     --home-about-us-background: url(assets/img/backgournd-home-about-us.jpg) lightgray 50% / cover no-repeat; */
 

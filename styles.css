@@ -1384,6 +1384,10 @@ p {
     }
 }
 
+.none-element {
+    display: none;
+}
+
 .material-icons {
     display: grid;
     justify-content: center;
@@ -1401,5 +1405,9 @@ p {
 }
 
 .header-color-primary {
-    color: var(--Text-Headline-primary, #00BB29);
+    color: var(--Text-Header-primary, #00BB29);
+}
+
+.header-color-secondary {
+    color: var(--text-header-secondary, #000);
 }
