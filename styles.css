@@ -1327,7 +1327,8 @@ h6 {
 }
 
 p,
-strong {
+strong,
+span {
     /* Regular/Body/Body 1 */
     font-family: Poppins;
     font-size: 16px;
@@ -1385,6 +1386,11 @@ strong {
             font-weight: 700;
         }
     }
+}
+
+.hr {
+    width: 100%;
+    margin: 1rem 0;
 }
 
 .none-element {
