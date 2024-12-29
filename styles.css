@@ -1403,6 +1403,7 @@ span {
     align-items: center;
     width: var(--spacing-15-rem, 24px);
     height: var(--spacing-15-rem, 24px);
+    color: var(--icon-color-primary, #000000);
 
     &#icons-color-primary {
         color: var(--icon-color-primary, #000000);
