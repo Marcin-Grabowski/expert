@@ -1188,6 +1188,7 @@ h1 {
 
     &.bold {
         /* Bold/Display/Display 1 */
+        font-weight: 700;
         line-height: 64px;
     }
 }
