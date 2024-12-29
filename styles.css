@@ -1189,6 +1189,7 @@ h1 {
     &.bold {
         /* Bold/Display/Display 1 */
         font-weight: 700;
+
         line-height: 64px;
     }
 }
@@ -1325,7 +1326,8 @@ h6 {
     }
 }
 
-p strong {
+p,
+strong {
     /* Regular/Body/Body 1 */
     font-family: Poppins;
     font-size: 16px;
